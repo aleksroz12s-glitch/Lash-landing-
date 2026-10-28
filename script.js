@@ -15,7 +15,7 @@ document.getElementById('leadForm').addEventListener('submit', function(e) {
 
   const message = `🔥 Новая заявка с сайта Lash Bar!\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n💅 Услуга: ${service}\n⏰ Время: ${new Date().toLocaleTimeString('ru-RU')}`;
 
-  fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+  fetch(`https://api.allorigins.win/raw?url=${encodeURIComponent(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`)}`)
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
