@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Студия взгляда Lash & Brow | Онлайн-запись</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Навигация -->
+  <header class="header">
+    <div class="logo">LASH BAR</div>
+    <a href="#booking" class="btn-header">Записаться</a>
+  </header>
+
+  <!-- Первый экран (Hero) -->
+  <section class="hero">
+    <span class="badge">Акция месяца</span>
+    <h1>Безупречный взгляд без утреннего макияжа</h1>
+    <p>Наращивание ресниц и оформление бровей от топ-мастеров. Носка от 4 недель с гарантией.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn-primary">Записаться со скидкой 15%</a>
+      <a href="#prices" class="btn-secondary">Смотреть прайс</a>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <section class="features">
+    <div class="feature-card">
+      <h3>Комфорт</h3>
+      <p>Анатомические мягкие кушетки с эффектом памяти</p>
+    </div>
+    <div class="feature-card">
+      <h3>Скорость</h3>
+      <p>Полное наращивание за 1.5–2 часа без потери качества</p>
+    </div>
+    <div class="feature-card">
+      <h3>Безопасность</h3>
+      <p>100% стерилизация инструментов по нормам СанПиН</p>
+    </div>
+  </section>
+
+  <!-- Прайс-лист -->
+  <section class="prices" id="prices">
+    <h2>Стоимость услуг</h2>
+    <div class="price-list">
+      <div class="price-item">
+        <div class="price-info">
+          <h4>Классический объем (1D)</h4>
+          <span>Естественный эффект, 1.5 часа</span>
+        </div>
+        <div class="price-cost">2 000 ₽</div>
+      </div>
+      <div class="price-item">
+        <div class="price-info">
+          <h4>Полуторный / Двойной объем (1.5D – 2D)</h4>
+          <span>Густой выразительный взгляд, 2 часа</span>
+        </div>
+        <div class="price-cost">2 400 ₽</div>
+      </div>
+      <div class="price-item">
+        <div class="price-info">
+          <h4>Тройной объем (3D) / Голливуд</h4>
+          <span>Максимальная яркость и объем, 2.5 часа</span>
+        </div>
+        <div class="price-cost">2 900 ₽</div>
+      </div>
+      <div class="price-item">
+        <div class="price-info">
+          <h4>Ламинирование + окрашивание ресниц</h4>
+          <span>Уход, завиток и питание, 1 час</span>
+        </div>
+        <div class="price-cost">1 800 ₽</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма записи / Конвертер -->
+  <section class="booking" id="booking">
+    <div class="booking-card">
+      <h2>Онлайн-запись</h2>
+      <p>Оставьте номер — мастер свяжется в течение 5 минут для подтверждения времени.</p>
+      
+      <form id="leadForm">
+        <input type="text" id="clientName" placeholder="Ваше имя" required>
+        <input type="tel" id="clientPhone" placeholder="+7 (___) ___-__-__" required>
+        <select id="clientService">
+          <option value="Классика">Классический объем (1D)</option>
+          <option value="2D Объем">Объем 2D</option>
+          <option value="3D Объем">Объем 3D</option>
+          <option value="Ламинирование">Ламинирование</option>
+        </select>
+        <button type="submit" class="btn-primary btn-block">Забронировать время</button>
+      </form>
+      <div id="statusMessage" class="status-msg"></div>
+
+      <div class="direct-messengers">
+        <span>Или напишите нам напрямую:</span>
+        <div class="messengers-links">
+          <a href="https://t.me/" target="_blank" class="tg-link">Telegram</a>
+          <a href="https://wa.me/" target="_blank" class="wa-link">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer>
+    <p>© 2026 Студия Lash Bar. Все права защищены.</p>
+    <p>Ежедневно с 10:00 до 21:00</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
